@@ -1,3 +1,5 @@
 Pods/
 RocketApp.xcworkspace/
 Podfile.lock
+RocketApp.xcodeproj/xcshareddata/
+RocketApp.xcodeproj/xcuserdata/

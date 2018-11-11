@@ -17,6 +17,23 @@
 		6F8F8DE02198A2A70006C35F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F8F8DDE2198A2A70006C35F /* LaunchScreen.storyboard */; };
 		6F8F8DEB2198A2A70006C35F /* RocketAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F8DEA2198A2A70006C35F /* RocketAppTests.swift */; };
 		6F8F8DF62198A2A70006C35F /* RocketAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F8DF52198A2A70006C35F /* RocketAppUITests.swift */; };
+		6FA27A2F2198A9190016F715 /* IBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A2E2198A9190016F715 /* IBaseRequest.swift */; };
+		6FA27A312198A96C0016F715 /* RequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A302198A96C0016F715 /* RequestExecutor.swift */; };
+		6FA27A342198ABF90016F715 /* RocketLaunchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A332198ABF90016F715 /* RocketLaunchRepository.swift */; };
+		6FA27A362198ACF10016F715 /* RocketLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A352198ACF10016F715 /* RocketLaunch.swift */; };
+		6FA27A382198AEE20016F715 /* BaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A372198AEE20016F715 /* BaseResult.swift */; };
+		6FA27A3B2198BA500016F715 /* RocketLaunchLatestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A3A2198BA500016F715 /* RocketLaunchLatestRequest.swift */; };
+		6FA27A3D2198C4950016F715 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A3C2198C4950016F715 /* HttpManager.swift */; };
+		6FA27A3F2198C5A10016F715 /* IBaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A3E2198C5A10016F715 /* IBaseResponse.swift */; };
+		6FA27A432198C9E30016F715 /* BaseGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A422198C9E30016F715 /* BaseGateway.swift */; };
+		6FA27A452198CA270016F715 /* AuthTokenInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A442198CA270016F715 /* AuthTokenInterceptor.swift */; };
+		6FA27A472198CB4A0016F715 /* RequestLoggingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A462198CB4A0016F715 /* RequestLoggingInterceptor.swift */; };
+		6FA27A492198CC770016F715 /* ResponseLoggingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A482198CC770016F715 /* ResponseLoggingInterceptor.swift */; };
+		6FA27A4F2198D03F0016F715 /* IRequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A4E2198D03F0016F715 /* IRequestExecutor.swift */; };
+		6FA27A522198D09F0016F715 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A512198D09F0016F715 /* BaseResponse.swift */; };
+		6FA27A552198D3C80016F715 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A542198D3C80016F715 /* DataExtensions.swift */; };
+		6FA27A572198D5B50016F715 /* NSErrorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A562198D5B50016F715 /* NSErrorExtensions.swift */; };
+		6FA27A5A2198D6F00016F715 /* RocketLaunchConstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A592198D6F00016F715 /* RocketLaunchConstract.swift */; };
 		A8945B915FBA56F270733ABB /* Pods_RocketApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F57EB74C0A82D1A9E5D12A /* Pods_RocketApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +74,23 @@
 		6F8F8DF12198A2A70006C35F /* RocketAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8F8DF52198A2A70006C35F /* RocketAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketAppUITests.swift; sourceTree = "<group>"; };
 		6F8F8DF72198A2A70006C35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FA27A2E2198A9190016F715 /* IBaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBaseRequest.swift; sourceTree = "<group>"; };
+		6FA27A302198A96C0016F715 /* RequestExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExecutor.swift; sourceTree = "<group>"; };
+		6FA27A332198ABF90016F715 /* RocketLaunchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunchRepository.swift; sourceTree = "<group>"; };
+		6FA27A352198ACF10016F715 /* RocketLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunch.swift; sourceTree = "<group>"; };
+		6FA27A372198AEE20016F715 /* BaseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResult.swift; sourceTree = "<group>"; };
+		6FA27A3A2198BA500016F715 /* RocketLaunchLatestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunchLatestRequest.swift; sourceTree = "<group>"; };
+		6FA27A3C2198C4950016F715 /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
+		6FA27A3E2198C5A10016F715 /* IBaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBaseResponse.swift; sourceTree = "<group>"; };
+		6FA27A422198C9E30016F715 /* BaseGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGateway.swift; sourceTree = "<group>"; };
+		6FA27A442198CA270016F715 /* AuthTokenInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenInterceptor.swift; sourceTree = "<group>"; };
+		6FA27A462198CB4A0016F715 /* RequestLoggingInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLoggingInterceptor.swift; sourceTree = "<group>"; };
+		6FA27A482198CC770016F715 /* ResponseLoggingInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseLoggingInterceptor.swift; sourceTree = "<group>"; };
+		6FA27A4E2198D03F0016F715 /* IRequestExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequestExecutor.swift; sourceTree = "<group>"; };
+		6FA27A512198D09F0016F715 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		6FA27A542198D3C80016F715 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		6FA27A562198D5B50016F715 /* NSErrorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSErrorExtensions.swift; sourceTree = "<group>"; };
+		6FA27A592198D6F00016F715 /* RocketLaunchConstract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunchConstract.swift; sourceTree = "<group>"; };
 		7981FBCB34AB0039BFE493F2 /* Pods-RocketAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RocketAppUITests/Pods-RocketAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9BDC66BEC2712E0464671ACF /* Pods-RocketAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RocketAppTests/Pods-RocketAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		BAA343021A0B22C14B9F874D /* Pods-RocketAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RocketAppTests/Pods-RocketAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +173,9 @@
 		6F8F8DD12198A2A60006C35F /* RocketApp */ = {
 			isa = PBXGroup;
 			children = (
+				6FA27A2D2198A8F60016F715 /* Common */,
+				6FA27A532198D3BA0016F715 /* Extension */,
+				6FA27A322198ABD70016F715 /* RocketLaunchLatest */,
 				6F8F8DD22198A2A60006C35F /* AppDelegate.swift */,
 				6F8F8DD42198A2A60006C35F /* ViewController.swift */,
 				6F8F8DD62198A2A60006C35F /* Main.storyboard */,
@@ -168,6 +205,108 @@
 			path = RocketAppUITests;
 			sourceTree = "<group>";
 		};
+		6FA27A2D2198A8F60016F715 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6FA27A412198C9C10016F715 /* Networking */,
+				6FA27A402198C9AD0016F715 /* Base */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6FA27A322198ABD70016F715 /* RocketLaunchLatest */ = {
+			isa = PBXGroup;
+			children = (
+				6FA27A5C2198D7440016F715 /* models */,
+				6FA27A5B2198D7330016F715 /* repositories */,
+				6FA27A582198D6D10016F715 /* contracts */,
+			);
+			path = RocketLaunchLatest;
+			sourceTree = "<group>";
+		};
+		6FA27A402198C9AD0016F715 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6FA27A2E2198A9190016F715 /* IBaseRequest.swift */,
+				6FA27A3E2198C5A10016F715 /* IBaseResponse.swift */,
+				6FA27A512198D09F0016F715 /* BaseResponse.swift */,
+				6FA27A422198C9E30016F715 /* BaseGateway.swift */,
+				6FA27A372198AEE20016F715 /* BaseResult.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6FA27A412198C9C10016F715 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6FA27A4C2198D01E0016F715 /* executors */,
+				6FA27A4B2198CFCF0016F715 /* managers */,
+				6FA27A4A2198CDD60016F715 /* interceptors */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6FA27A4A2198CDD60016F715 /* interceptors */ = {
+			isa = PBXGroup;
+			children = (
+				6FA27A442198CA270016F715 /* AuthTokenInterceptor.swift */,
+				6FA27A462198CB4A0016F715 /* RequestLoggingInterceptor.swift */,
+				6FA27A482198CC770016F715 /* ResponseLoggingInterceptor.swift */,
+			);
+			path = interceptors;
+			sourceTree = "<group>";
+		};
+		6FA27A4B2198CFCF0016F715 /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				6FA27A3C2198C4950016F715 /* HttpManager.swift */,
+			);
+			path = managers;
+			sourceTree = "<group>";
+		};
+		6FA27A4C2198D01E0016F715 /* executors */ = {
+			isa = PBXGroup;
+			children = (
+				6FA27A4E2198D03F0016F715 /* IRequestExecutor.swift */,
+				6FA27A302198A96C0016F715 /* RequestExecutor.swift */,
+			);
+			path = executors;
+			sourceTree = "<group>";
+		};
+		6FA27A532198D3BA0016F715 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6FA27A542198D3C80016F715 /* DataExtensions.swift */,
+				6FA27A562198D5B50016F715 /* NSErrorExtensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6FA27A582198D6D10016F715 /* contracts */ = {
+			isa = PBXGroup;
+			children = (
+				6FA27A592198D6F00016F715 /* RocketLaunchConstract.swift */,
+			);
+			path = contracts;
+			sourceTree = "<group>";
+		};
+		6FA27A5B2198D7330016F715 /* repositories */ = {
+			isa = PBXGroup;
+			children = (
+				6FA27A332198ABF90016F715 /* RocketLaunchRepository.swift */,
+				6FA27A3A2198BA500016F715 /* RocketLaunchLatestRequest.swift */,
+			);
+			path = repositories;
+			sourceTree = "<group>";
+		};
+		6FA27A5C2198D7440016F715 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				6FA27A352198ACF10016F715 /* RocketLaunch.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,6 +319,7 @@
 				6F8F8DCC2198A2A60006C35F /* Frameworks */,
 				6F8F8DCD2198A2A60006C35F /* Resources */,
 				B54A2F26DA3FD75CD8DE48FB /* [CP] Embed Pods Frameworks */,
+				6FA27A392198B27F0016F715 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -317,6 +457,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6FA27A392198B27F0016F715 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		8926203F97492F97CE3C2D64 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,7 +540,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F8F8DDB2198A2A60006C35F /* RocketApp.xcdatamodeld in Sources */,
+				6FA27A342198ABF90016F715 /* RocketLaunchRepository.swift in Sources */,
+				6FA27A4F2198D03F0016F715 /* IRequestExecutor.swift in Sources */,
+				6FA27A362198ACF10016F715 /* RocketLaunch.swift in Sources */,
+				6FA27A3B2198BA500016F715 /* RocketLaunchLatestRequest.swift in Sources */,
+				6FA27A552198D3C80016F715 /* DataExtensions.swift in Sources */,
+				6FA27A5A2198D6F00016F715 /* RocketLaunchConstract.swift in Sources */,
+				6FA27A2F2198A9190016F715 /* IBaseRequest.swift in Sources */,
+				6FA27A572198D5B50016F715 /* NSErrorExtensions.swift in Sources */,
+				6FA27A472198CB4A0016F715 /* RequestLoggingInterceptor.swift in Sources */,
+				6FA27A432198C9E30016F715 /* BaseGateway.swift in Sources */,
+				6FA27A522198D09F0016F715 /* BaseResponse.swift in Sources */,
+				6FA27A3D2198C4950016F715 /* HttpManager.swift in Sources */,
 				6F8F8DD52198A2A60006C35F /* ViewController.swift in Sources */,
+				6FA27A452198CA270016F715 /* AuthTokenInterceptor.swift in Sources */,
+				6FA27A492198CC770016F715 /* ResponseLoggingInterceptor.swift in Sources */,
+				6FA27A312198A96C0016F715 /* RequestExecutor.swift in Sources */,
+				6FA27A382198AEE20016F715 /* BaseResult.swift in Sources */,
+				6FA27A3F2198C5A10016F715 /* IBaseResponse.swift in Sources */,
 				6F8F8DD32198A2A60006C35F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

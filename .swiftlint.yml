@@ -1,0 +1,8 @@
+line_length:
+ ignores_comments: true
+ warning: 150
+ error: 200
+disabled_rules:
+- trailing_whitespace
+excluded:
+- Pods

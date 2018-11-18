@@ -12,4 +12,4 @@ protocol IRocketLaunchRepository {
      func loadLatestLaunches(page: Int, pageSize: Int, gateway: @escaping RocketLaunchRepositoryLatestGateway)
 }
 
-public typealias RocketLaunchRepositoryLatestGateway = BaseGateway<[Launch]>
+public typealias RocketLaunchRepositoryLatestGateway = BaseGateway<RocketLaunchLatestResponse>

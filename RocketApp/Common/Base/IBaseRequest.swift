@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-protocol IBaseRequest: NSObjectProtocol {
+protocol IBaseRequest {
     var url: String { get }
     var method: HTTPMethod { get }
     var parameters: [String: Any] { get set }

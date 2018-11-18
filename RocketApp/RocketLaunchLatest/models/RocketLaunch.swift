@@ -11,47 +11,46 @@ import Foundation
 import Foundation
 
 public struct Launch: Codable {
-    let flightNumber: Int
-    let missionName: String
-    let launchYear: String
-    let launchDateUnix: Int
+    let launchId: Int
+    let status: Int
+    let name: String?
     let rocket: Rocket
-    let launchSite: LaunchSite
-    let launchSuccess: Bool
-    let staticFireDateUnix: Int
+    let location: Location?
     
     enum CodingKeys: String, CodingKey {
-        case flightNumber = "flight_number"
-        case missionName = "mission_name"
-        case launchYear = "launch_year"
-        case launchDateUnix = "launch_date_unix"
+        case launchId = "id"
+        case status
+        case name
         case rocket
-        case launchSite = "launch_site"
-        case launchSuccess = "launch_success"
-        case staticFireDateUnix = "static_fire_date_unix"
+        case location
     }
 }
 
-public struct LaunchSite: Codable {
-    let siteID: String?
-    let siteName: String?
-    let siteNameLong: String?
+
+public struct Location: Codable {
+    let locationId: Int?
+    let name: String?
+    let infoUrl: String?
+    let wikiUrl: String?
+    let countryCode: String?
     
     enum CodingKeys: String, CodingKey {
-        case siteID = "site_id"
-        case siteName = "site_name"
-        case siteNameLong = "site_name_long"
+        case locationId = "id"
+        case name
+        case infoUrl = "infoURL"
+        case wikiUrl = "wikiURL"
+        case countryCode
     }
 }
 
 public struct Rocket: Codable {
-    let rocketID: String?
+    let rocketID: Int?
     let rocketName: String?
     let rocketType: String?
     
     enum CodingKeys: String, CodingKey {
-        case rocketID = "rocket_id"
-        case rocketName = "rocket_name"
-        case rocketType = "rocket_type"
+        case rocketID = "id"
+        case rocketName = "name"
+        case rocketType = "familyname"
     }
 }

@@ -9,9 +9,9 @@
 import Foundation
 import Alamofire
 
-class RocketLaunchLatestRequest: NSObject, IBaseRequest {
+struct RocketLaunchLatestRequest: IBaseRequest {
     var method: HTTPMethod = .get
-    var parameters: [String : Any] = [:]
+    var parameters: [String: Any] = [:]
     var headers: [String : String] = [:]
     var url: String
     

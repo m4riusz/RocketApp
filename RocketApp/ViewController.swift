@@ -15,8 +15,8 @@ class ViewController: UIViewController {
         let repo: IRocketLaunchRepository = RocketLaunchRepository()
         repo.loadLatestLaunches(page: 0, pageSize: 10) { (result) in
             switch result {
-            case .success(let items):
-                print("SUCCESS")
+            case .success(let data):
+                print("SUCCESS\n\(data.currentCount)")
             case .failure(let error):
                 print("error")
             }

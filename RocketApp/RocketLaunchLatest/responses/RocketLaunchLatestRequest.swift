@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-struct RocketLaunchLatestRequest: IBaseRequest {
+class RocketLaunchLatestRequest: NSObject, IBaseRequest {
     var method: HTTPMethod = .get
     var parameters: [String: Any] = [:]
     var headers: [String : String] = [:]

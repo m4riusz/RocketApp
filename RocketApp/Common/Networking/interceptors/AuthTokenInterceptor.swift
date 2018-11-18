@@ -12,6 +12,6 @@ class AuthTokenInterceptor: NSObject, IRequestInterceptor {
     fileprivate static let authTokenHeader: String = "Auth-Token"
     
     func intercept(_ request: IBaseRequest) {
-//        request.headers[AuthTokenInterceptor.authTokenHeader] = "123"
+        request.headers[AuthTokenInterceptor.authTokenHeader] = "123"
     }
 }

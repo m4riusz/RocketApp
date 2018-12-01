@@ -34,13 +34,14 @@
 		6FA27A522198D09F0016F715 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A512198D09F0016F715 /* BaseResponse.swift */; };
 		6FA27A552198D3C80016F715 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A542198D3C80016F715 /* DataExtensions.swift */; };
 		6FA27A572198D5B50016F715 /* NSErrorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A562198D5B50016F715 /* NSErrorExtensions.swift */; };
-		6FA27A5A2198D6F00016F715 /* RocketLaunchListConstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A592198D6F00016F715 /* RocketLaunchListConstract.swift */; };
+		6FA27A5A2198D6F00016F715 /* RocketLaunchListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA27A592198D6F00016F715 /* RocketLaunchListContract.swift */; };
 		6FE229D821B2FF3C00263C62 /* DataDownloadViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE229D721B2FF3C00263C62 /* DataDownloadViewProtocol.swift */; };
 		6FE229DC21B3008000263C62 /* RocketLaunchListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE229DB21B3008000263C62 /* RocketLaunchListController.swift */; };
 		6FE229DE21B301C600263C62 /* RocketLaunchListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE229DD21B301C600263C62 /* RocketLaunchListCell.swift */; };
 		6FE229E121B303CC00263C62 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE229E021B303CC00263C62 /* DataSource.swift */; };
 		6FE229E321B306A000263C62 /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE229E221B306A000263C62 /* Spacing.swift */; };
 		6FE229E521B30E1900263C62 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE229E421B30E1900263C62 /* UITableViewCellExtensions.swift */; };
+		6FE229E821B3179E00263C62 /* RocketLaunchListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE229E721B3179E00263C62 /* RocketLaunchListPresenter.swift */; };
 		DF557E9D7DA9B29793168DBF /* Pods_RocketAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631F252FAF190EE227773BCE /* Pods_RocketAppUITests.framework */; };
 		FB71C0DFCBAF2E2B05E38EFE /* Pods_RocketAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2657302425292639F05C6903 /* Pods_RocketAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -99,13 +100,14 @@
 		6FA27A512198D09F0016F715 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		6FA27A542198D3C80016F715 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
 		6FA27A562198D5B50016F715 /* NSErrorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSErrorExtensions.swift; sourceTree = "<group>"; };
-		6FA27A592198D6F00016F715 /* RocketLaunchListConstract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunchListConstract.swift; sourceTree = "<group>"; };
+		6FA27A592198D6F00016F715 /* RocketLaunchListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunchListContract.swift; sourceTree = "<group>"; };
 		6FE229D721B2FF3C00263C62 /* DataDownloadViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDownloadViewProtocol.swift; sourceTree = "<group>"; };
 		6FE229DB21B3008000263C62 /* RocketLaunchListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunchListController.swift; sourceTree = "<group>"; };
 		6FE229DD21B301C600263C62 /* RocketLaunchListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunchListCell.swift; sourceTree = "<group>"; };
 		6FE229E021B303CC00263C62 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		6FE229E221B306A000263C62 /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
 		6FE229E421B30E1900263C62 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
+		6FE229E721B3179E00263C62 /* RocketLaunchListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunchListPresenter.swift; sourceTree = "<group>"; };
 		7E87AC2DDEBB957814B38408 /* Pods-RocketApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RocketApp/Pods-RocketApp.release.xcconfig"; sourceTree = "<group>"; };
 		8E401665C49C3F9A1D46003A /* Pods-RocketAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RocketAppTests/Pods-RocketAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		95CC623E3E11985A08A53A91 /* Pods_RocketApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RocketApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,6 +242,7 @@
 				6FA27A582198D6D10016F715 /* contracts */,
 				6FE229D921B2FFCF00263C62 /* controllers */,
 				6FA27A5C2198D7440016F715 /* models */,
+				6FE229E621B3177800263C62 /* presenters */,
 				6FA27A5B2198D7330016F715 /* repositories */,
 				6F0D16B521A1C8C10002630E /* responses */,
 				6F0D16B421A1C8BA0002630E /* requests */,
@@ -313,7 +316,7 @@
 		6FA27A582198D6D10016F715 /* contracts */ = {
 			isa = PBXGroup;
 			children = (
-				6FA27A592198D6F00016F715 /* RocketLaunchListConstract.swift */,
+				6FA27A592198D6F00016F715 /* RocketLaunchListContract.swift */,
 			);
 			path = contracts;
 			sourceTree = "<group>";
@@ -356,6 +359,14 @@
 				6FE229E021B303CC00263C62 /* DataSource.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		6FE229E621B3177800263C62 /* presenters */ = {
+			isa = PBXGroup;
+			children = (
+				6FE229E721B3179E00263C62 /* RocketLaunchListPresenter.swift */,
+			);
+			path = presenters;
 			sourceTree = "<group>";
 		};
 		BB47B14ECB4991905A8A1712 /* Pods */ = {
@@ -609,7 +620,7 @@
 				6FA27A362198ACF10016F715 /* RocketLaunch.swift in Sources */,
 				6FA27A3B2198BA500016F715 /* RocketLaunchListLatestRequest.swift in Sources */,
 				6FA27A552198D3C80016F715 /* DataExtensions.swift in Sources */,
-				6FA27A5A2198D6F00016F715 /* RocketLaunchListConstract.swift in Sources */,
+				6FA27A5A2198D6F00016F715 /* RocketLaunchListContract.swift in Sources */,
 				6FA27A2F2198A9190016F715 /* IBaseRequest.swift in Sources */,
 				6FA27A572198D5B50016F715 /* NSErrorExtensions.swift in Sources */,
 				6FA27A472198CB4A0016F715 /* RequestLoggingInterceptor.swift in Sources */,
@@ -618,6 +629,7 @@
 				6FA27A3D2198C4950016F715 /* HttpManager.swift in Sources */,
 				6FE229DC21B3008000263C62 /* RocketLaunchListController.swift in Sources */,
 				6F8F8DD52198A2A60006C35F /* ViewController.swift in Sources */,
+				6FE229E821B3179E00263C62 /* RocketLaunchListPresenter.swift in Sources */,
 				6FE229E121B303CC00263C62 /* DataSource.swift in Sources */,
 				6FE229DE21B301C600263C62 /* RocketLaunchListCell.swift in Sources */,
 				6FA27A452198CA270016F715 /* AuthTokenInterceptor.swift in Sources */,

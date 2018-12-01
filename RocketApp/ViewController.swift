@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let repo: IRocketLaunchListRepository = RocketLaunchListRepository()
+        let repo: RocketLaunchListRepositoryProtocol = RocketLaunchListRepository()
         repo.loadLatestLaunches(page: 0, pageSize: 10) { (result) in
             switch result {
             case .success(let data):

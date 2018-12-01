@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RocketLaunchListRepository: NSObject, IRocketLaunchListRepository {
+class RocketLaunchListRepository: NSObject, RocketLaunchListRepositoryProtocol {
     
     func loadLatestLaunches(page: Int, pageSize: Int, gateway: @escaping RocketLaunchListGateway) {
         let request = RocketLaunchListLatestRequest(page: page, pageSize: pageSize)

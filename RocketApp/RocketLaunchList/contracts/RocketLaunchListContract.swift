@@ -8,15 +8,15 @@
 
 import Foundation
 
-protocol IRocketLauchListView: NSObjectProtocol, DataDownloadViewProtocol {
+protocol RocketLaunchListViewProtocol: NSObjectProtocol, DataDownloadViewProtocol {
     func setRocketLauncheList(_ rocketLaunchList: [RocketLaunch])
 }
 
-protocol IRocketLaunchListPresenter: NSObjectProtocol {
+protocol RocketLaunchListPresenterProtocol: NSObjectProtocol {
     func loadLatestLaunches(page: Int)
 }
 
-protocol IRocketLaunchListRepository: NSObjectProtocol {
+protocol RocketLaunchListRepositoryProtocol: NSObjectProtocol {
      func loadLatestLaunches(page: Int, pageSize: Int, gateway: @escaping RocketLaunchListGateway)
 }
 

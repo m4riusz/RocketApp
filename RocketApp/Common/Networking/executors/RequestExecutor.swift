@@ -11,7 +11,7 @@ import Alamofire
 
 class RequestExecutor: NSObject, IRequestExecutor {
     
-    func execute<T>(_ request: IBaseRequest, gateway: @escaping BaseGateway<T>) {
+    func execute<T>(_ request: IBaseRequest, gateway: @escaping Gateway<T>) {
         
         HttpManager.shared.getRequestInterceptors().forEach { $0.intercept(request) }
         Alamofire.request(request.url, method: request.method, parameters: request.parameters, encoding: URLEncoding.default, headers: request.headers).responseData { (response) in

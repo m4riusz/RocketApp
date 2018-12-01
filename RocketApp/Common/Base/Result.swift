@@ -1,5 +1,5 @@
 //
-//  BaseResult.swift
+//  Result.swift
 //  RocketApp
 //
 //  Created by Mariusz Sut on 11/11/2018.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum BaseResult<T: Codable> {
+public enum Result<T: Codable> {
     case success(_ result: T)
     case failure(_ error: NSError)
 }

@@ -10,5 +10,5 @@ import Foundation
 import Alamofire
 
 protocol IRequestExecutor: NSObjectProtocol {
-    func execute<T: Codable>(_ request: IBaseRequest, gateway: @escaping BaseGateway<T>)
+    func execute<T: Codable>(_ request: IBaseRequest, gateway: @escaping Gateway<T>)
 }

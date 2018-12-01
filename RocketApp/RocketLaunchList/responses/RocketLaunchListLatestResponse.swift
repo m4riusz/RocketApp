@@ -1,5 +1,5 @@
 //
-//  RocketLaunchLatestResponse.swift
+//  RocketLaunchListLatestResponse.swift
 //  RocketApp
 //
 //  Created by Mariusz Sut on 18/11/2018.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-public class RocketLaunchLatestResponse: BasePageResponse {
-    let launches: [Launch]
+public class RocketLaunchListLatestResponse: BasePageResponse {
+    let launches: [RocketLaunch]
     
     public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.launches = try container.decode([Launch].self, forKey: .launches)
+        self.launches = try container.decode([RocketLaunch].self, forKey: .launches)
         try super.init(from: decoder)
     }
     

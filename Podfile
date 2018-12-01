@@ -10,6 +10,7 @@ target 'RocketApp' do
   pod 'SnapKit', '~> 4.0.0'
   pod 'Alamofire', '~> 4.7'
   pod 'SwiftLint'
+  pod 'FlagKit'
 
   target 'RocketAppTests' do
     inherit! :search_paths

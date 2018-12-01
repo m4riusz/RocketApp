@@ -10,7 +10,7 @@ import Foundation
 
 import Foundation
 
-public struct Launch: Codable {
+public struct RocketLaunch: Codable {
     let launchId: Int
     let status: Int
     let name: String?

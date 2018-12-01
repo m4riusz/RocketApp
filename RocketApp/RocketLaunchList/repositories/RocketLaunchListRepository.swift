@@ -8,12 +8,12 @@
 
 import Foundation
 
-class RocketLaunchRepository: NSObject, IRocketLaunchRepository {
+class RocketLaunchListRepository: NSObject, IRocketLaunchListRepository {
     
-    func loadLatestLaunches(page: Int, pageSize: Int, gateway: @escaping RocketLaunchRepositoryLatestGateway) {
-        let request = RocketLaunchLatestRequest(page: page, pageSize: pageSize)
+    func loadLatestLaunches(page: Int, pageSize: Int, gateway: @escaping RocketLaunchListGateway) {
+        let request = RocketLaunchListLatestRequest(page: page, pageSize: pageSize)
         let worker: IRequestExecutor = RequestExecutor()
-        worker.execute(request) { (result: BaseResult<RocketLaunchLatestResponse>) in
+        worker.execute(request) { (result: Result<RocketLaunchListLatestResponse>) in
             switch result {
             case .success(let response):
                 gateway(.success(response))

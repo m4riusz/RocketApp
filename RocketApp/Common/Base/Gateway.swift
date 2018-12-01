@@ -1,5 +1,5 @@
 //
-//  BaseGateway.swift
+//  Gateway.swift
 //  RocketApp
 //
 //  Created by Mariusz Sut on 11/11/2018.
@@ -8,4 +8,4 @@
 
 import Foundation
 
-public typealias BaseGateway<T: Codable> = (_ result: BaseResult<T>) -> Void
+public typealias Gateway<T: Codable> = (_ result: Result<T>) -> Void

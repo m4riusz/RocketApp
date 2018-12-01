@@ -1,5 +1,5 @@
 //
-//  RocketLaunchLatestRequest.swift
+//  RocketLaunchListLatestRequest.swift
 //  RocketApp
 //
 //  Created by Mariusz Sut on 11/11/2018.
@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-class RocketLaunchLatestRequest: NSObject, IBaseRequest {
+class RocketLaunchListLatestRequest: NSObject, IBaseRequest {
     var method: HTTPMethod = .get
     var parameters: [String: Any] = [:]
     var headers: [String : String] = [:]

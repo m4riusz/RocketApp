@@ -11,8 +11,6 @@
 		6F0D16B321A1C6650002630E /* BasePageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0D16B221A1C6650002630E /* BasePageResponse.swift */; };
 		6F0D16B721A1C8DD0002630E /* RocketLaunchListLatestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0D16B621A1C8DD0002630E /* RocketLaunchListLatestResponse.swift */; };
 		6F8F8DD32198A2A60006C35F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F8DD22198A2A60006C35F /* AppDelegate.swift */; };
-		6F8F8DD52198A2A60006C35F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F8DD42198A2A60006C35F /* ViewController.swift */; };
-		6F8F8DD82198A2A60006C35F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F8F8DD62198A2A60006C35F /* Main.storyboard */; };
 		6F8F8DDB2198A2A60006C35F /* RocketApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F8DD92198A2A60006C35F /* RocketApp.xcdatamodeld */; };
 		6F8F8DDD2198A2A70006C35F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F8F8DDC2198A2A70006C35F /* Assets.xcassets */; };
 		6F8F8DE02198A2A70006C35F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F8F8DDE2198A2A70006C35F /* LaunchScreen.storyboard */; };
@@ -72,8 +70,6 @@
 		6F0D16B621A1C8DD0002630E /* RocketLaunchListLatestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunchListLatestResponse.swift; sourceTree = "<group>"; };
 		6F8F8DCF2198A2A60006C35F /* RocketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8F8DD22198A2A60006C35F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6F8F8DD42198A2A60006C35F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6F8F8DD72198A2A60006C35F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F8F8DDA2198A2A60006C35F /* RocketApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RocketApp.xcdatamodel; sourceTree = "<group>"; };
 		6F8F8DDC2198A2A70006C35F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F8F8DDF2198A2A70006C35F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -198,8 +194,6 @@
 				6FA27A532198D3BA0016F715 /* Extension */,
 				6FA27A322198ABD70016F715 /* RocketLaunchList */,
 				6F8F8DD22198A2A60006C35F /* AppDelegate.swift */,
-				6F8F8DD42198A2A60006C35F /* ViewController.swift */,
-				6F8F8DD62198A2A60006C35F /* Main.storyboard */,
 				6F8F8DDC2198A2A70006C35F /* Assets.xcassets */,
 				6F8F8DDE2198A2A70006C35F /* LaunchScreen.storyboard */,
 				6F8F8DE12198A2A70006C35F /* Info.plist */,
@@ -493,7 +487,6 @@
 			files = (
 				6F8F8DE02198A2A70006C35F /* LaunchScreen.storyboard in Resources */,
 				6F8F8DDD2198A2A70006C35F /* Assets.xcassets in Resources */,
-				6F8F8DD82198A2A60006C35F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,7 +621,6 @@
 				6FA27A522198D09F0016F715 /* BaseResponse.swift in Sources */,
 				6FA27A3D2198C4950016F715 /* HttpManager.swift in Sources */,
 				6FE229DC21B3008000263C62 /* RocketLaunchListController.swift in Sources */,
-				6F8F8DD52198A2A60006C35F /* ViewController.swift in Sources */,
 				6FE229E821B3179E00263C62 /* RocketLaunchListPresenter.swift in Sources */,
 				6FE229E121B303CC00263C62 /* DataSource.swift in Sources */,
 				6FE229DE21B301C600263C62 /* RocketLaunchListCell.swift in Sources */,
@@ -676,14 +668,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6F8F8DD62198A2A60006C35F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6F8F8DD72198A2A60006C35F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6F8F8DDE2198A2A70006C35F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         HttpManager.shared.setRequestInterceptors([AuthTokenInterceptor(), RequestLoggingInterceptor()])
         HttpManager.shared.setResponseInterceptors([ResponseLoggingInterceptor()])
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.makeKeyAndVisible()
+        self.window?.rootViewController = UINavigationController(rootViewController: RocketLaunchListController())
         return true
     }
 

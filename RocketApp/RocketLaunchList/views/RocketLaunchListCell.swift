@@ -8,16 +8,26 @@
 
 import UIKit
 import SnapKit
+import FlagKit
+import SDWebImage
 
 class RocketLaunchListCell: UITableViewCell {
-    fileprivate static let flagSize: CGSize = CGSize(width: 60, height: 30)
-    
     fileprivate var rocketLauch: RocketLaunch?
     fileprivate var containerView: UIView?
     fileprivate var countyImageView: UIImageView?
     fileprivate var titleLabel: UILabel?
     fileprivate var rocketImageView: UIImageView?
     fileprivate var startDateLabel: UILabel?
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.initialize()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.initialize()
+    }
     
     
     fileprivate func initialize() {
@@ -35,6 +45,10 @@ class RocketLaunchListCell: UITableViewCell {
         self.containerView = UIView()
         self.containerView?.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(self.containerView!)
+        
+        self.containerView?.snp.makeConstraints { make in
+            make.edges.equalToSuperview().inset(UIEdgeInsets(top: Spacing.default, left: Spacing.default, bottom: Spacing.default, right: Spacing.default))
+        }
     }
     
     fileprivate func initCountryImageView() {
@@ -43,12 +57,14 @@ class RocketLaunchListCell: UITableViewCell {
         }
         self.countyImageView = UIImageView()
         self.countyImageView?.translatesAutoresizingMaskIntoConstraints = false
+        self.countyImageView?.contentMode = .scaleAspectFit
+        self.countyImageView?.setContentHuggingPriority(.required, for: .horizontal)
+        self.countyImageView?.setContentHuggingPriority(.required, for: .vertical)
         self.containerView?.addSubview(self.countyImageView!)
         
-        self.countyImageView?.snp.makeConstraints{ make in
+        self.countyImageView?.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(Spacing.none)
             make.right.equalToSuperview().offset(Spacing.none)
-            make.width.equalToSuperview().dividedBy(10)
         }
     }
     
@@ -64,7 +80,7 @@ class RocketLaunchListCell: UITableViewCell {
             make.left.equalToSuperview().offset(Spacing.none)
             make.top.equalToSuperview().offset(Spacing.none)
             make.bottom.equalToSuperview().offset(Spacing.none)
-            make.width.equalToSuperview().dividedBy(4)
+            make.width.height.equalTo(100)
         }
     }
     
@@ -74,12 +90,14 @@ class RocketLaunchListCell: UITableViewCell {
         }
         self.titleLabel = UILabel()
         self.titleLabel?.translatesAutoresizingMaskIntoConstraints = false
+        self.titleLabel?.numberOfLines = 2
+        self.titleLabel?.setContentHuggingPriority(.required, for: .vertical)
         self.containerView?.addSubview(self.titleLabel!)
         
         self.titleLabel?.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(Spacing.none)
-            make.left.equalTo(self.rocketImageView!).offset(Spacing.none)
-            make.right.equalTo(self.countyImageView!).offset(Spacing.none)
+            make.left.equalTo(self.rocketImageView!.snp.right).offset(Spacing.default)
+            make.right.equalTo(self.countyImageView!.snp.left).offset(-Spacing.default)
         }
     }
     
@@ -89,13 +107,14 @@ class RocketLaunchListCell: UITableViewCell {
         }
         self.startDateLabel = UILabel()
         self.startDateLabel?.translatesAutoresizingMaskIntoConstraints = false
+        self.startDateLabel?.numberOfLines = 2
         self.containerView?.addSubview(self.startDateLabel!)
         
         self.startDateLabel?.snp.makeConstraints { make in
-            make.top.equalTo(self.titleLabel!).offset(Spacing.none)
-            make.left.equalTo(self.rocketImageView!).offset(Spacing.none)
-            make.right.equalTo(self.countyImageView!).offset(Spacing.none)
-            make.bottom.equalToSuperview().offset(Spacing.none)
+            make.top.equalTo(self.titleLabel!.snp.bottom).offset(Spacing.default)
+            make.left.equalTo(self.rocketImageView!.snp.right).offset(Spacing.default)
+            make.right.equalTo(self.countyImageView!.snp.left).offset(-Spacing.default)
+            make.bottom.greaterThanOrEqualToSuperview()
         }
     }
 }
@@ -105,5 +124,12 @@ extension RocketLaunchListCell: UpdatableCell {
     
     func updateForViewFor(item: RocketLaunch) {
         self.titleLabel?.text = item.name
+        if let url = URL(string: item.rocket.rocketImage) {
+            self.rocketImageView?.sd_setImage(with: url)
+        }
+        if let countryCode = item.location?.countryCode, let countryImage = Flag(countryCode: "PL") {
+            self.countyImageView?.image = countryImage.image(style: .roundedRect)
+        }
+        self.startDateLabel?.text = item.windowStart
     }
 }

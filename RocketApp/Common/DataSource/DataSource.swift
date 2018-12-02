@@ -20,6 +20,10 @@ protocol UpdatableCell {
 
 class DataSource<T, Cell: UITableViewCell & UpdatableCell>: NSObject, UITableViewDataSource, UITableViewDelegate where Cell.AssociatedType == T {
     fileprivate var sections: [Section<T>] = []
+    
+    func setItems(sections: [Section<T>]) {
+        self.sections = sections
+    }
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return self.sections.count

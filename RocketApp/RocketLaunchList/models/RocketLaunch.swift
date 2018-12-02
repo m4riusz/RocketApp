@@ -16,6 +16,7 @@ public struct RocketLaunch: Codable {
     let name: String?
     let rocket: Rocket
     let location: Location?
+    let windowStart: String?
     
     enum CodingKeys: String, CodingKey {
         case launchId = "id"
@@ -23,9 +24,9 @@ public struct RocketLaunch: Codable {
         case name
         case rocket
         case location
+        case windowStart = "windowstart"
     }
 }
-
 
 public struct Location: Codable {
     let locationId: Int?
@@ -47,10 +48,12 @@ public struct Rocket: Codable {
     let rocketID: Int?
     let rocketName: String?
     let rocketType: String?
+    let rocketImage: String
     
     enum CodingKeys: String, CodingKey {
         case rocketID = "id"
         case rocketName = "name"
         case rocketType = "familyname"
+        case rocketImage = "imageURL"
     }
 }

@@ -7,6 +7,8 @@ targets:
   platform: iOS
   deploymentTarget: "10.0"
   sources: [RocketApp]
+  scheme:
+   testTargets: [RocketAppTests, RocketAppUITests]
   settings:
    base:
     PRODUCT_BUNDLE_IDENTIFIER: com.msut
@@ -19,11 +21,13 @@ targets:
   type: bundle.unit-test
   platform: iOS
   sources: RocketAppTests
+  scheme: {}
   dependencies:
    - target: RocketApp
  RocketAppUITests:
   type: bundle.ui-testing
   platform: iOS
   sources: RocketAppUITests
+  scheme: {}
   dependencies:
    - target: RocketApp

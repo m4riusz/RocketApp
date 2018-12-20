@@ -8,34 +8,39 @@
 
 import Foundation
 
+enum ChainResult<T> {
+    case proceed(T)
+    case cancel
+}
+
 class HttpManager: NSObject {
     static let shared: HttpManager = HttpManager()
-    fileprivate var requestInterceptors: [IRequestInterceptor] = []
-    fileprivate var responseInterceptors: [IResponseInterceptor] = []
+    fileprivate var requestChain: RequestChain = RequestChain()
+    fileprivate var responseChain: ResponseChain = ResponseChain()
     
     fileprivate override init() {}
     
     func setRequestInterceptors(_ interceptors: [IRequestInterceptor]) {
-        self.requestInterceptors = interceptors
+        self.requestChain.setInterceptors(interceptors)
     }
     
     func setResponseInterceptors(_ interceptors: [IResponseInterceptor]) {
-        self.responseInterceptors = interceptors
+        self.responseChain.setInterceptors(interceptors)
     }
     
-    func getRequestInterceptors() -> [IRequestInterceptor] {
-        return self.requestInterceptors
+    func proceed(_ request: IBaseRequest, gateway: @escaping RequestChainGateway) {
+        self.requestChain.intercept(request: request, gateway: gateway)
     }
     
-    func getResponseInterceptors() -> [IResponseInterceptor] {
-        return self.responseInterceptors
+    func proceed(_ response: IBaseResponse, gateway: @escaping ResponseChainGateway) {
+        self.responseChain.intercept(response: response, gateway: gateway)
     }
 }
 
 protocol IRequestInterceptor: NSObjectProtocol {
-    func intercept(_ request: IBaseRequest)
+    func intercept(_ request: IBaseRequest, chain: @escaping RequestChainGateway)
 }
 
 protocol IResponseInterceptor: NSObjectProtocol {
-    func intercept(_ response: IBaseResponse)
+    func intercept(_ response: IBaseResponse, chain: @escaping ResponseChainGateway)
 }

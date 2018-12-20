@@ -11,7 +11,8 @@ import Foundation
 class AuthTokenInterceptor: NSObject, IRequestInterceptor {
     fileprivate static let authTokenHeader: String = "Auth-Token"
     
-    func intercept(_ request: IBaseRequest) {
+    func intercept(_ request: IBaseRequest, chain: @escaping RequestChainGateway) {
         request.headers[AuthTokenInterceptor.authTokenHeader] = "123"
+        chain(.proceed(request))
     }
 }

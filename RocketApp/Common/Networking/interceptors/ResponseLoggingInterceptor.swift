@@ -9,11 +9,11 @@
 import Foundation
 
 class ResponseLoggingInterceptor: NSObject, IResponseInterceptor {
-    
-    func intercept(_ response: IBaseResponse) {
+    func intercept(_ response: IBaseResponse, chain: @escaping ResponseChainGateway) {
         print("\nRESPONSE FROM REQUEST: \n\t\(response.url)")
         print("HEADERS: ")
         response.headers.forEach { print("\t\($0) : \($1)")}
         print("BODY: \n\t\(response.body ?? "")\n")
+        chain(.proceed(response))
     }
 }

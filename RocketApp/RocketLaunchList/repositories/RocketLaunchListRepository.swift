@@ -12,8 +12,7 @@ class RocketLaunchListRepository: NSObject, RocketLaunchListRepositoryProtocol {
     
     func loadLatestLaunches(page: Int, pageSize: Int, gateway: @escaping RocketLaunchListGateway) {
         let request = RocketLaunchListLatestRequest(page: page, pageSize: pageSize)
-        let worker: IRequestExecutor = RequestExecutor()
-        worker.execute(request) { (result: Result<RocketLaunchListLatestResponse>) in
+        request.execute(request) { (result: Result<RocketLaunchListLatestResponse>) in
             switch result {
             case .success(let response):
                 gateway(.success(response))

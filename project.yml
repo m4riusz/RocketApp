@@ -1,0 +1,29 @@
+name: RocketApp
+options:
+ deploymentTarget: [iOS]
+targets:
+ RocketApp:
+  type: application
+  platform: iOS
+  deploymentTarget: "10.0"
+  sources: [RocketApp]
+  settings:
+   base:
+    PRODUCT_BUNDLE_IDENTIFIER: com.msut
+  dependencies:
+   - carthage: Alamofire
+   - carthage: SnapKit
+   - carthage: SDWebImage
+   - carthage: FlagKit
+ RocketAppTests:
+  type: bundle.unit-test
+  platform: iOS
+  sources: RocketAppTests
+  dependencies:
+   - target: RocketApp
+ RocketAppUITests:
+  type: bundle.ui-testing
+  platform: iOS
+  sources: RocketAppUITests
+  dependencies:
+   - target: RocketApp

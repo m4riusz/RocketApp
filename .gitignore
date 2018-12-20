@@ -3,3 +3,6 @@ RocketApp.xcworkspace/
 Podfile.lock
 RocketApp.xcodeproj/xcshareddata/
 RocketApp.xcodeproj/xcuserdata/
+Carthage/
+Cartfile.resolved
+RocketApp.xcodeproj/

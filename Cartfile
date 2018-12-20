@@ -1,0 +1,4 @@
+github "SDWebImage/SDWebImage"
+github "SnapKit/SnapKit" ~> 4.0.0
+github "Alamofire/Alamofire" 
+github "madebybowtie/FlagKit"
